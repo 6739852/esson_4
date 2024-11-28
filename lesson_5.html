@@ -5,13 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <script src="./cd_array.js"></script>
-    <script src="/lesson_5.js"></script>
-     enter a name:
+    :הכנס שם
+    <br>
+    <input type="text" id="name">
+    <input type="button" value="סנן לפי שם דיסק" onclick="f1()">
+    <div id="byname"></div>
+    <br></br>
+    <select id="sel" onchange="showDiskByCountry(event)"></select>
+    <div id="show"></div>
      <br>
-     <input type="text" id="name">
-     <input type="button" value="סנן לפי שם הדיסק" onclick="f1()">
+     <p>:סנן מי שנה</p>
+    <input type="number" id="from">
+    <p>:סנן עד שנה</p>
+    <input type="number" id="to">
+    <input type="button" value="סנן" onclick="f3()">
+    <br>
+    <br>
+    <div>
+    <label>הכנס כותרת</label>
+    <br>
+    <input type="text" id="title">
+    <br>
+    <label>הכנס אמן</label>
+    <br>
+    <input type="text" id="artist">
+    <br>
+    <label>הכנס מדינה</label>
+    <br>
+    <input type="text" id="country">
+    <br>
+    <label>הכנס חברה</label>
+    <br>
+    <input type="text" id="company">
+    <br>
+    <label>הכנס מחיר</label>
+    <br>
+    <input type="text" id="price">
+    <br>
+    <label>הכנס שנה</label>
+    <br>
+    <input type="text" id="year">
+    <br>
+    <input type="button" name="" id="addItem" value="הוספת מוצר" onclick="f5()">
+  </div>
+  <br>
+  <div>
+    <input type="button" value="enter a index to ears" onclick="f6()">
+    <input type="text" id="index">
+  </div>
+    
+    <script src="./cd_array.js"></script>
+    <script src="./lesson_5.js"></script>
 </body>
 </html>
