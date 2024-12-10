@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <p>enter a price:</p>
+  <input type="text"  id="in1">
+  <button id="bt1" onclick="changePrice()">save</button>
+  <p>enter a calories:</p>
+  <input type="text"  id="in2" onblur="changeCalories()">
+  
+  <script src="./lesson_s_2_js.js"></script>
+  <form action="" id="form" >
+    <select id="s">
+        <option value="error">error</option>
+        <option value="waning">waning</option>
+        <option value="info">info</option>
+    </select>
+    <input type="text" value="enter a title" id="title">
+    <input type="text" value="enter a center" id="center">
+    <button onclick="saveDetails(event)">save</button>
+  </form>
+</body>
+</html>
